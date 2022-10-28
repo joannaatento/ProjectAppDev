@@ -1,0 +1,130 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "es2017",
+    "module": "es2020",
+    "lib": [
+      "es2018",
+      "dom"
+    ]
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  }
+}
+/*export class Papasa{
+  constructor(
+      public title: string,
+      public imagePath: string,
+      public description: string
+  ){}
+}*/
+
+
+/*import { Injectable } from "@angular/core";
+import { Papasa } from "./post.model";
+
+@Injectable({providedIn: 'root'})
+
+export class PostService{
+    listOfPosts: Papasa[]=[
+        new Papasa(
+            'OBSESSION',
+            'https://www.goodinfonet.com/uploads/news/goodinfonet_exo_for_beginners_100_facts_about_exo_1600280289_0.jpg',
+            'exo is the best'
+        )
+    ]
+    getPost(){
+        return this.listOfPosts
+    }
+
+}*/
+
+/*<h1>{{post?.title}}</h1>
+
+<img src="{{post?.imagePath}}">
+
+
+<h3>{{post?.description}}</h3>*/
+
+
+
+/*import { Component, Input, OnInit } from '@angular/core';
+import { Papasa } from '../post.model';
+
+
+@Component({
+  selector: 'app-post',
+  templateUrl: './post.component.html',
+  styleUrls: ['./post.component.css']
+})
+export class PostComponent implements OnInit {
+
+  @Input() post?: Papasa;
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+}*/
+
+/*import { Component, OnInit } from '@angular/core';
+import { Papasa } from '../post.model';
+import { PostService } from '../post.service';
+
+
+
+@Component({
+  selector: 'app-post-list',
+  templateUrl: './post-list.component.html',
+  styleUrls: ['./post-list.component.css']
+})
+export class PostListComponent implements OnInit {
+  listOfPosts: Papasa[]=[
+    
+  ]
+  
+
+  constructor(private postService:PostService) { }
+
+
+  ngOnInit(): void {
+    
+  this.listOfPosts=this.postService.getPost()
+   
+   
+  }
+
+}*/
+
+/*<app-post *ngFor = "let posts of listOfPosts" [post]="posts"></app-post>*/
+
+
+/*<app-post-list></app-post-list>*/
+
+
+/*post.model.ts
+post.service.ts
+post.component.ts
+post.component.html
+post-list.component.ts
+post-list.component.html
+app.component.html */
+
+
